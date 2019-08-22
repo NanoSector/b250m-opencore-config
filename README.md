@@ -11,6 +11,9 @@ OpenCore configuration for my personal desktop
 - Monitors: 2x LG Flatron W2261VP, 1x BenQ XL2420T
 - Audio: HDMI audio via an Onkyo TX-NR609
 
+# BIOS Settings
+See the screenshots under the `BIOS` directory.
+
 # OpenCore config noteworthy things
 
 - SIP is completely enabled
