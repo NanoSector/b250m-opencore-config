@@ -8,6 +8,22 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>DTPG</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-DTPG.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SBUS</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SBUS.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Apple NVMe Controller</string>
 				<key>Enabled</key>
 				<true/>
@@ -24,11 +40,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>DTPG</string>
+				<string>plugin-type to 1</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-DTPG.aml</string>
+				<string>SSDT-PLUG.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -85,22 +101,6 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-XHC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SBUS</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SBUS.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>plugin-type to 1</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
 			</dict>
 		</array>
 		<key>Patch</key>
