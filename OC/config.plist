@@ -288,6 +288,10 @@
 		</array>
 		<key>Boot</key>
 		<dict>
+			<key>ConsoleBehaviourOs</key>
+			<string>Graphics</string>
+			<key>ConsoleBehaviourUi</key>
+			<string>Text</string>
 			<key>ShowPicker</key>
 			<true/>
 			<key>Timeout</key>
