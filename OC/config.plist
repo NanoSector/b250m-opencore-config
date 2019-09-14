@@ -357,12 +357,13 @@
 			<string>HFSPlus.efi</string>
 			<string>ApfsDriverLoader.efi</string>
 			<string>VirtualSmc.efi</string>
-			<string>AppleUiSupport.efi</string>
 			<string>AppleGenericInput.efi</string>
 		</array>
 		<key>Protocols</key>
 		<dict>
 			<key>ConsoleControl</key>
+			<true/>
+			<key>FirmwareVolume</key>
 			<true/>
 		</dict>
 		<key>Quirks</key>
