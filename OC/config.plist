@@ -301,6 +301,8 @@
 		</dict>
 		<key>Security</key>
 		<dict>
+			<key>ScanPolicy</key>
+			<integer>525571</integer>
 			<key>RequireSignature</key>
 			<false/>
 		</dict>
