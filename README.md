@@ -23,6 +23,18 @@ See the screenshots under the `BIOS` directory.
 - `ig-platform-id` is set to `0x19120001` for connectorless mode. This fixes JPEGs not opening properly among other things. Netflix is still broken.
 - The `ConsoleControl` protocol, along with the `IgnoreTextInGraphics` and `ProvideConsoleGop` quirks, fix text from flooding the apple logo boot screen.
 - `vault.plist` is *en*abled, be sure to either disable it or generate a vault.plist
+- `ScanPolicy` is set to a value that only scans NVMe drives and specific partition types. If you do not want to use an NVMe drive, you will need to change this.
+
+## ScanPolicy enabled flags
+ScanPolicy is set to a value of `525571` or binary `000010000000010100000011`. This means the following flags are set:
+
+- `OC_SCAN_FILE_SYSTEM_LOCK` (bit 0)
+- `OC_SCAN_DEVICE_LOCK` (bit 1)
+- `OC_SCAN_ALLOW_FS_APFS` (bit 8)
+- `OC_SCAN_ALLOW_FS_ESP` (bit 10)
+- `OC_SCAN_ALLOW_DEVICE_NVME` (bit 19)
+
+Please refer to the OpenCore manual for the meaning of these flags. In short, these flags allow scanning of APFS partitions (for macOS) and the ESP partition (for Boot Camp) on NVMe drives only.
 
 # ACPI edits
 See the ACPI subfolder. Most of these edits consist of setting device properties to make the devices show up nicely in macOS and have them at the native PCI paths.
@@ -45,7 +57,6 @@ Not included in this repo, I use the following drivers:
 
 - ApfsDriverLoader
 - AppleGenericInput
-- AppleUiSupport
 - FwRuntimeServices
 - HFSPlus
 - VirtualSmc
@@ -56,7 +67,6 @@ Most originate from [AppleSupportPkg](https://github.com/acidanthera/AppleSuppor
 Not included in this repo, I use the following kexts:
 
 - AGPMEnabler.kext: Used for enabling AGPM on the integrated and dedicated GPU. Can be generated using various tools, my kext would be useless on most other configurations.
-- [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup): Used mainly for country code patches as the Fenvi card is natively supported in macOS
 - [AppleALC](https://github.com/acidanthera/AppleALC): Fixes for HDMI audio. I have the onboard sound controller disabled.
 - [IntelMausi](https://github.com/acidanthera/IntelMausi): Driver for the built-in Ethernet controller
 - [Lilu](https://github.com/acidanthera/Lilu): Requirement for most other kexts in this list
