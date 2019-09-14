@@ -282,6 +282,10 @@
 	</dict>
 	<key>Misc</key>
 	<dict>
+		<key>BlessOverride</key>
+		<array>
+			<string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
+		</array>
 		<key>Boot</key>
 		<dict>
 			<key>ShowPicker</key>
@@ -362,6 +366,8 @@
 			<key>IgnoreTextInGraphics</key>
 			<true/>
 			<key>ProvideConsoleGop</key>
+			<true/>
+			<key>RequestBootVarRouting</key>
 			<true/>
 		</dict>
 	</dict>
