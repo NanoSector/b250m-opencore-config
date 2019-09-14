@@ -8,10 +8,10 @@ Please do not use this with any newer or older version as some options may no lo
 - CPU: i5 6400
 - Board: Gigabyte B250M-D3H
 - GPU: Sapphire Radeon RX 580 4GB something something…
-- RAM: 16 GB Crucial Ballistix DDR4 @ 2133MHz
+- RAM: 16 GB Crucial Ballistix 2400 MHz DDR4 @ 2133MHz
 - SSD: Toshiba XG5 256GB NVMe
 - Wifi: Fenvi T919
-- Monitors: 2x LG Flatron W2261VP, 1x BenQ XL2420T
+- Monitors: 1x BenQ XL2420T
 - Audio: HDMI audio via an Onkyo TX-NR609
 
 # BIOS Settings
