@@ -301,8 +301,6 @@
 		</dict>
 		<key>Security</key>
 		<dict>
-			<key>ExposeSensitiveData</key>
-			<integer>2</integer>
 			<key>RequireSignature</key>
 			<false/>
 		</dict>
