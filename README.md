@@ -6,7 +6,7 @@ Please do not use this with any newer or older version as some options may no lo
 
 # Specs
 - CPU: i5 6400
-- Board: Gigabyte B250M-D3H
+- Board: Gigabyte B250M-D3H (BIOS F10)
 - GPU: Sapphire Radeon RX 580 4GB something something…
 - RAM: 16 GB Crucial Ballistix 2400 MHz DDR4 @ 2133MHz
 - SSD: Toshiba XG5 256GB NVMe
