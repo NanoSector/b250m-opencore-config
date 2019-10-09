@@ -157,124 +157,88 @@
 			<dict>
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
-				<key>Comment</key>
-				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
-				<key>MatchKernel</key>
-				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
-				<key>Comment</key>
-				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VirtualSMC</string>
-				<key>MatchKernel</key>
-				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
-				<key>Comment</key>
-				<string>Video card</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/WhateverGreen</string>
-				<key>MatchKernel</key>
-				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
-				<key>Comment</key>
-				<string>Sound</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleALC</string>
-				<key>MatchKernel</key>
-				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>BundlePath</key>
 				<string>IntelMausi.kext</string>
-				<key>Comment</key>
-				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelMausi</string>
-				<key>MatchKernel</key>
-				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
-				<key>Comment</key>
-				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCProcessor</string>
-				<key>MatchKernel</key>
-				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>BundlePath</key>
 				<string>SMCSuperIO.kext</string>
-				<key>Comment</key>
-				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCSuperIO</string>
-				<key>MatchKernel</key>
-				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>BundlePath</key>
 				<string>USBInjectAll.kext</string>
-				<key>Comment</key>
-				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/USBInjectAll</string>
-				<key>MatchKernel</key>
-				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>BundlePath</key>
 				<string>AGPMEnabler.kext</string>
-				<key>Comment</key>
-				<string></string>
 				<key>Enabled</key>
 				<true/>
-				<key>MatchKernel</key>
-				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
