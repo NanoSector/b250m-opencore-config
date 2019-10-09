@@ -21,7 +21,6 @@ See the screenshots under the `BIOS` directory.
 
 - SIP is completely enabled
 - `ig-platform-id` is set to `0x19120001` for connectorless mode. This fixes JPEGs not opening properly among other things. Netflix is still broken.
-- The `ConsoleControl` protocol, along with the `IgnoreTextInGraphics` and `ProvideConsoleGop` quirks, fix text from flooding the apple logo boot screen.
 - `vault.plist` is *en*abled, be sure to either disable it or generate a vault.plist
 - `ScanPolicy` is set to a value that only scans NVMe drives and specific partition types. If you do not want to use an NVMe drive, you will need to change this.
 
