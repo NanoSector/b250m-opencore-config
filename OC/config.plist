@@ -266,10 +266,8 @@
 			<string>Graphics</string>
 			<key>ConsoleBehaviourUi</key>
 			<string>Text</string>
-			<key>ShowPicker</key>
+			<key>PollAppleHotKeys</key>
 			<true/>
-			<key>Timeout</key>
-			<integer>3</integer>
 			<key>UsePicker</key>
 			<true/>
 		</dict>
