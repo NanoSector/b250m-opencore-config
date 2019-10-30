@@ -65,6 +65,7 @@ Most originate from [AppleSupportPkg](https://github.com/acidanthera/AppleSuppor
 Not included in this repo, I use the following kexts:
 
 - AGPMEnabler.kext: Used for enabling AGPM on the integrated and dedicated GPU. Can be generated using various tools, my kext would be useless on most other configurations.
+- [AirportBrcmFixup](https://github.com/acidanthera/AppleALC): Used to set a country code and also to disable WoWLAN to prevent unnecessary wakeups.
 - [AppleALC](https://github.com/acidanthera/AppleALC): Fixes for HDMI audio. I have the onboard sound controller disabled.
 - [IntelMausi](https://github.com/acidanthera/IntelMausi): Driver for the built-in Ethernet controller
 - [Lilu](https://github.com/acidanthera/Lilu): Requirement for most other kexts in this list
