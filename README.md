@@ -43,9 +43,9 @@ See the ACPI subfolder. Most of these edits consist of setting device properties
 - `ARPT`: Moves the Fenvi card from PXSX to ARPT and sets device properties. Also sets `brcmfx-country` to set the country code in conjunction with `AirportBrcmFixup`
 - `DTPG`: Adds the DTPG method used by various `_DSM` methods in other edited SSDTs
 - `EC`: EC patch
-- `ETH0`: Renames GLAN -> EHT0 and sets device properties.
+- `ETH0`: Renames GLAN -> ETH0 and sets device properties.
 - `PLUG`: Sets `plugin-type` to 1, needed for AGPM and CPU power management.
-- `RX580`: Renames PEGP -> GFX0 and D05A -> HDAU and defines several methods related to the RX580. The Orinoco framebuffer is most appropriate for my card and also fixes an issue where my leftmost DVI monitor is blank on boot.
+- `RX580`: Renames PEGP -> GFX0 and D05A -> HDAU and defines several methods related to the RX580. The Orinoco framebuffer is most appropriate for my card and also fixes an issue where the DVI output is blank on boot.
 - `SAT0`: Sets device properties for the SATA controller
 - `SBUS`: System bus patches
 - `UIAC`: SSDT defining which ports to keep enabled, for USB Inject All
