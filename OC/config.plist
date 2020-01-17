@@ -263,11 +263,11 @@
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleBehaviourOs</key>
-			<string>Graphics</string>
+			<string>ForceGraphics</string>
 			<key>ConsoleBehaviourUi</key>
-			<string>Text</string>
-			<key>PollAppleHotKeys</key>
-			<true/>
+			<string>ForceText</string>
+			<key>Resolution</key>
+			<string>Max</string>
 			<key>UsePicker</key>
 			<true/>
 		</dict>
@@ -355,6 +355,8 @@
 			<key>IgnoreTextInGraphics</key>
 			<true/>
 			<key>ProvideConsoleGop</key>
+			<true/>
+			<key>ReconnectOnResChange</key>
 			<true/>
 			<key>RequestBootVarRouting</key>
 			<true/>
