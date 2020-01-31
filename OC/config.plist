@@ -102,6 +102,14 @@
 				<key>Path</key>
 				<string>SSDT-XHC.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Realtek ALC892</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-HDEF.aml</string>
+			</dict>
 		</array>
 		<key>Patch</key>
 		<array>
