@@ -37,7 +37,7 @@ ScanPolicy is set to a value of `525571` or binary `000010000000010100000011`. T
 Please refer to the OpenCore manual for the meaning of these flags. In short, these flags allow scanning of APFS partitions (for macOS) and the ESP partition (for Boot Camp) on NVMe drives only.
 
 # ACPI edits
-See the ACPI subfolder. Most of these edits consist of setting device properties to make the devices show up nicely in macOS and have them at the native PCI paths.
+See the ACPI subfolder.
 
 - `EC`: EC patch
 - `PLUG`: Sets `plugin-type` to 1, needed for AGPM and proper CPU power management.
