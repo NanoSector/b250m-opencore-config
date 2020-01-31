@@ -8,35 +8,11 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>DTPG</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-DTPG.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SBUS</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-SBUS.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Apple NVMe Controller</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-ANS1.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Fenvi T-919</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-ARPT.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -56,30 +32,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Intel Ethernet</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-ETH0.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Radeon RX 580</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-RX580.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Intel SATA Controller</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SAT0.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Intel USB Controller</string>
 				<key>Enabled</key>
 				<true/>
@@ -93,45 +45,6 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-USBX.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Intel USB Controller 3</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-XHC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Realtek ALC892</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-HDEF.aml</string>
-			</dict>
-		</array>
-		<key>Patch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>change _DSM to XDSM</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X0RTTQ==</data>
-				<key>Replace</key>
-				<data>WERTTQ==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change _OSI to XOSI</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X09TSQ==</data>
-				<key>Replace</key>
-				<data>WE9TSQ==</data>
 			</dict>
 		</array>
 	</dict>
@@ -151,10 +64,26 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key># Realtek ALC892</key>
+			<string></string>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<integer>1</integer>
+			</dict>
+			<key># Intel HD Graphics</key>
+			<string></string>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AQASGQ==</data>
+			</dict>
+			<key># Fenvi T919</key>
+			<string></string>
+			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>brcmfx-country</key>
+				<string>NL</string>
 			</dict>
 		</dict>
 	</dict>

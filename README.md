@@ -39,19 +39,19 @@ Please refer to the OpenCore manual for the meaning of these flags. In short, th
 # ACPI edits
 See the ACPI subfolder. Most of these edits consist of setting device properties to make the devices show up nicely in macOS and have them at the native PCI paths.
 
-- `ANS1`: Moves the NVMe drive from PXSX to ANS1 and sets device properties in its DSM method.
-- `ARPT`: Moves the Fenvi card from PXSX to ARPT and sets device properties. Also sets `brcmfx-country` to set the country code in conjunction with `AirportBrcmFixup`
-- `DTPG`: Adds the DTPG method used by various `_DSM` methods in other edited SSDTs
 - `EC`: EC patch
-- `ETH0`: Renames GLAN -> ETH0 and sets device properties.
-- `HDEF`: Renames HDAS -> HDEF, sets device properties and sets `layout-id` to 1 for this particular board.
 - `PLUG`: Sets `plugin-type` to 1, needed for AGPM and proper CPU power management.
-- `RX580`: Renames PEGP -> GFX0 and D05A -> HDAU and defines several methods related to the RX580. The Orinoco framebuffer is most appropriate for my card and also fixes an issue where the DVI output is blank on boot.
-- `SAT0`: Sets device properties for the SATA controller
-- `SBUS`: System bus patches
+- `SBUS`: System bus patches used to enable the AppleSMBusPCI kext
 - `UIAC`: SSDT defining which ports to keep enabled, for USB Inject All
 - `USBX`: Sets various USB power management properties
-- `XHC`: Sets USB controller device properties
+
+# Device Properties
+- `PciRoot(0x0)/Pci(0x1f,0x3)`: Realtek ALC892
+    - `layout-id`: `1`, used to tell AppleALC which layout ID to pick to get the onboard sound working.
+- `PciRoot(0x0)/Pci(0x2,0x0)`: Intel HD Graphics 530
+    - `ig-platform-id`: `0x19120001` (reversed) to enable a connectorless mode for the onboard graphics. Used to get acceleration working in various areas.
+- `PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)`: Fenvi T-919
+    - `brcmfx-country`: `NL` to make optimal use out of the Fenvi card and to reduce possible interference with surrounding devices.
 
 # Drivers
 Not included in this repo, I use the following drivers:
