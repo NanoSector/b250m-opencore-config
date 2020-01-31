@@ -8,11 +8,11 @@ Please do not use this with any newer or older version as some options may no lo
 # Specs
 - CPU: i5 6400
 - Board: Gigabyte B250M-D3H (BIOS F10)
-- GPU: Sapphire Radeon RX 580 4GB something something…
+- GPU: Sapphire Radeon RX 580 4GB
 - RAM: 16 GB Crucial Ballistix 2400 MHz DDR4 @ 2133MHz
 - SSD: 512 GB Samsung 970 EVO
 - Wifi: Fenvi T919
-- Monitors: 1x BenQ XL2420T
+- Monitors: 1x BenQ XL2420T + 1x LG Flatron W2261VP
 - Audio: HDMI audio via an Onkyo TX-NR609 + Realtek ALC892
 
 # BIOS Settings
@@ -56,12 +56,9 @@ See the ACPI subfolder. Most of these edits consist of setting device properties
 # Drivers
 Not included in this repo, I use the following drivers:
 
-- ApfsDriverLoader
-- FwRuntimeServices
-- HFSPlus
-- VirtualSmc
-
-Most originate from [AppleSupportPkg](https://github.com/acidanthera/AppleSupportPkg). VirtualSmc.efi is included in the VirtualSMC package, linked below.
+- [ApfsDriverLoader](https://github.com/acidanthera/AppleSupportPkg)
+- FwRuntimeServices (in the OpenCore package)
+- HFSPlus (grab it from a macOS install)
 
 # Kexts
 Not included in this repo, I use the following kexts:
@@ -74,3 +71,15 @@ Not included in this repo, I use the following kexts:
 - [USB Inject All](https://bitbucket.org/RehabMan/os-x-usb-inject-all/src/master/): Used for injecting only USB ports which are in use, to keep the system inside the 15 port limit
 - [VirtualSMC](https://github.com/acidanthera/VirtualSMC): SMC emulator
 - [WhateverGreen](https://github.com/acidanthera/WhateverGreen): Required for proper functioning of both the integrated graphics card in headless/connectorless mode, and the RX580
+
+# Current issues
+## Netflix
+Netflix in Safari doesn't work with error `S7363-1260-FFFFD089`. `shikigva=80` added in [WhateverGreen 1.3.6](https://github.com/acidanthera/WhateverGreen/releases/tag/1.3.6) might be able to fix this. However, this hangs my GPU as soon as Safari starts rendering any site.
+
+## Bluetooth lag
+The Fenvi card seems to have issues with Bluetooth. A ton of stuttering can be observed with a Magic Trackpad 2 and Logitech MX Master. A workaround is to connect the card to a 5GHz(?) Wi-Fi network, even if you are using Ethernet.
+
+## CPU power management
+CPU power management doesn't seem to work well? The CPU seems to stay high in frequency even when idle according to Intel Power Gadget. It does fluctuate, which indicates that power management is working in one form or another.
+
+Tried CPUFriend + a data provider, ssdtPRgen, and just plugin-type 1. What seems to work best is just not setting plugin-type at all. The CPU drops to much lower frequencies. Without plugin-type, however, AGPM does not work.
