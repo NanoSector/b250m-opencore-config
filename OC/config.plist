@@ -239,6 +239,8 @@
 				<data>ZW5fVVM6MA==</data>
 			</dict>
 		</dict>
+		<key>WriteFlash</key>
+		<true/>
 	</dict>
 	<key>PlatformInfo</key>
 	<dict>
@@ -259,8 +261,6 @@
 		<true/>
 		<key>UpdateSMBIOSMode</key>
 		<string>Create</string>
-		<key>WriteFlash</key>
-		<true/>
 	</dict>
 	<key>UEFI</key>
 	<dict>
