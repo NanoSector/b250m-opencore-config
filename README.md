@@ -1,8 +1,8 @@
 # b250m-opencore-config
 OpenCore configuration for my personal desktop.
 
-# OpenCore version tested with: 0.5.6
-## macOS version tested with: 10.15.3
+# OpenCore version tested with: 0.5.7
+## macOS version tested with: 10.15.4
 Please do not use this with any newer or older version as some options may no longer exist or be interpreted differently, or new options may be needed in order to successfully boot.
 
 # Specs
@@ -24,6 +24,7 @@ See the screenshots under the `BIOS` directory.
 - `ig-platform-id` is set to `0x19120001` for connectorless mode. This fixes JPEGs not opening properly among other things. Netflix is still broken.
 - `vault.plist` is *en*abled, be sure to either disable it or generate a vault.plist
 - `ScanPolicy` is set to a value that only scans NVMe drives and specific partition types. If you do not want to use an NVMe drive, you will need to change this.
+- The firmware has no MAT support, so `EnableWriteUnprotector` needs to be used for a succesful boot instead of the recommended `RebuildAppleMemoryMap`.
 
 ## ScanPolicy enabled flags
 ScanPolicy is set to a value of `525571` or binary `000010000000010100000011`. This means the following flags are set:
@@ -58,7 +59,7 @@ See the ACPI subfolder.
 Not included in this repo, I use the following drivers:
 
 - [ApfsDriverLoader](https://github.com/acidanthera/AppleSupportPkg)
-- FwRuntimeServices (in the OpenCore package)
+- OpenRuntime (in the OpenCore package)
 - [HFSPlus](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi)
 
 # Kexts
@@ -77,5 +78,7 @@ Not included in this repo, I use the following kexts:
 ## Netflix
 Netflix in Safari doesn't work with error `S7363-1260-FFFFD089`. `shikigva=80` added in [WhateverGreen 1.3.6](https://github.com/acidanthera/WhateverGreen/releases/tag/1.3.6) might be able to fix this. However, this hangs my GPU as soon as Safari starts rendering any site. This still happens in 1.3.7.
 
-## Bluetooth lag
+Using an iMac Pro SMBIOS with iGPU disabled might potentially fix this as it circumvents the iGPU, using the AMD GPU directly. I'll potentially look into this on a clean reinstall.
+
+## Bluetooth lag (fixed-ish)
 The Fenvi card seems to have issues with Bluetooth. A ton of stuttering can be observed with a Magic Trackpad 2 and Logitech MX Master. A workaround is to connect the card to a 5GHz(?) Wi-Fi network, even if you are using Ethernet.

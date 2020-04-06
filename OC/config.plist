@@ -279,9 +279,9 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>FwRuntimeServices.efi</string>
-			<string>HFSPlus.efi</string>
+			<string>HfsPlus.efi</string>
 			<string>ApfsDriverLoader.efi</string>
+			<string>OpenRuntime.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
