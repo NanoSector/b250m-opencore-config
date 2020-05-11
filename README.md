@@ -57,6 +57,7 @@ See the ACPI subfolder.
 # Drivers
 Not included in this repo, I use the following drivers:
 
+- OpenCanopy (in the OpenCore package)
 - OpenRuntime (in the OpenCore package)
 - [HFSPlus](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi)
 

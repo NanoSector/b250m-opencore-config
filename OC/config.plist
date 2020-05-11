@@ -220,11 +220,17 @@
 		<key>Boot</key>
 		<dict>
 			<key>PickerMode</key>
-			<string>Builtin</string>
+			<string>External</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>TakeoffDelay</key>
 			<integer>10000</integer>
+			<key>Timeout</key>
+			<integer>5</integer>
+			<key>ShowPicker</key>
+			<true/>
+			<key>PickerAttributes</key>
+			<integer>1</integer>
 		</dict>
 		<key>Security</key>
 		<dict>
@@ -293,6 +299,7 @@
 		<array>
 			<string>HfsPlus.efi</string>
 			<string>OpenRuntime.efi</string>
+			<string>OpenCanopy.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
