@@ -1,7 +1,7 @@
 # b250m-opencore-config
 OpenCore configuration for my personal desktop.
 
-# OpenCore version tested with: 0.5.7
+# OpenCore version tested with: 0.5.8
 ## macOS version tested with: 10.15.4
 Please do not use this with any newer or older version as some options may no longer exist or be interpreted differently, or new options may be needed in order to successfully boot.
 
@@ -57,7 +57,6 @@ See the ACPI subfolder.
 # Drivers
 Not included in this repo, I use the following drivers:
 
-- [ApfsDriverLoader](https://github.com/acidanthera/AppleSupportPkg)
 - OpenRuntime (in the OpenCore package)
 - [HFSPlus](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi)
 
