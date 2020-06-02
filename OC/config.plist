@@ -213,10 +213,6 @@
 	</dict>
 	<key>Misc</key>
 	<dict>
-		<key>BlessOverride</key>
-		<array>
-			<string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
-		</array>
 		<key>Boot</key>
 		<dict>
 			<key>PickerMode</key>
@@ -242,6 +238,8 @@
 			<string>Basic</string>
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
+			<key>BlacklistAppleUpdate</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>NVRAM</key>
