@@ -44,7 +44,6 @@ See the ACPI subfolder.
 - `EC`: EC patch
 - `PLUG`: Sets `plugin-type` to 1, needed for AGPM and proper CPU power management.
 - `SBUS`: System bus patches used to enable the AppleSMBusPCI kext
-- `UIAC`: SSDT defining which ports to keep enabled, for USB Inject All
 - `USBX`: Sets various USB power management properties
 
 # Device Properties
@@ -65,13 +64,12 @@ Not included in this repo, I use the following drivers:
 # Kexts
 Not included in this repo, I use the following kexts:
 
-- [AirportBrcmFixup](https://github.com/acidanthera/AppleALC): Used to set a country code and also to disable WoWLAN to prevent unnecessary wakeups.
 - [AppleALC](https://github.com/acidanthera/AppleALC): Fixes for HDMI and onboard audio
 - [CPUFriend](https://github.com/acidanthera/CPUFriend): Injects proper CPU power management properties generated with [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend) with a LFM of 800 MHz
 - [IntelMausi](https://github.com/acidanthera/IntelMausi): Driver for the built-in Ethernet controller
 - [Lilu](https://github.com/acidanthera/Lilu): Requirement for most other kexts in this list
 - [NVMeFix](https://github.com/acidanthera/NVMeFix): Fixes for NVMe drives
-- [USB Inject All](https://bitbucket.org/RehabMan/os-x-usb-inject-all/src/master/): Used for injecting only USB ports which are in use, to keep the system inside the 15 port limit
+- USBPorts: Generated with Hackintool, used for injecting only USB ports which are in use, to keep the system inside the 15 port limit
 - [VirtualSMC](https://github.com/acidanthera/VirtualSMC): SMC emulator
 - [WhateverGreen](https://github.com/acidanthera/WhateverGreen): Required for proper functioning of both the integrated graphics card in headless/connectorless mode, and the RX580
 
