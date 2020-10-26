@@ -1,8 +1,8 @@
 # b250m-opencore-config
 OpenCore configuration for my personal desktop.
 
-# OpenCore version tested with: 0.5.9
-## macOS version tested with: 10.15.6
+# OpenCore version tested with: 0.6.2
+## macOS version tested with: 10.15.7
 Please do not use this with any newer or older version as some options may no longer exist or be interpreted differently, or new options may be needed in order to successfully boot.
 
 # Specs
@@ -11,9 +11,10 @@ Please do not use this with any newer or older version as some options may no lo
 - GPU: Sapphire Radeon RX 580 4GB
 - RAM: 16 GB Crucial Ballistix 2400 MHz DDR4 @ 2133MHz
 - SSD: 512 GB Samsung 970 EVO
+- SSD: 256 GB Samsung 850 EVO
 - Wifi: Fenvi T919
-- Monitors: 1x BenQ XL2420T + 1x LG Flatron W2261VP
-- Audio: HDMI audio via an Onkyo TX-NR609 + Realtek ALC892
+- Monitors: 2x Philips 245E
+- Audio: HDMI audio via Philips 245E
 
 # BIOS Settings
 See the screenshots under the `BIOS` directory.
@@ -22,7 +23,8 @@ See the screenshots under the `BIOS` directory.
 
 - SIP is completely enabled
 - `ig-platform-id` is set to `0x19120001` for connectorless mode. This fixes JPEGs not opening properly among other things. Netflix is still broken.
-- `vault.plist` is *en*abled, be sure to either disable it or generate a vault.plist
+- `vault.plist` is enabled **and signed**, be sure to either disable it or generate a vault.plist
+- Apple Secure Boot is set to level Basic
 - `ScanPolicy` is set to a value that only scans NVMe drives and specific partition types. If you do not want to use an NVMe drive, you will need to change this.
 - The firmware has no MAT support, so `EnableWriteUnprotector` needs to be used for a succesful boot instead of the recommended `RebuildAppleMemoryMap`.
 - `shikigva=80` is set as boot argument to fix DRM and enable Netflix in Safari according to [the WhateverGreen manual](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md)
@@ -53,6 +55,8 @@ See the ACPI subfolder.
     - `ig-platform-id`: `0x19120001` (reversed) to enable a connectorless mode for the onboard graphics. Used to get acceleration working in various areas.
 - `PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)`: Fenvi T-919
     - `brcmfx-country`: `NL` to make optimal use out of the Fenvi card and to reduce possible interference with surrounding devices.
+- `PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)`: Radeon RX 580
+    - `shikigva`: `80` to allow DRM playback patches
 
 # Drivers
 Not included in this repo, I use the following drivers:
@@ -74,6 +78,4 @@ Not included in this repo, I use the following kexts:
 - [WhateverGreen](https://github.com/acidanthera/WhateverGreen): Required for proper functioning of both the integrated graphics card in headless/connectorless mode, and the RX580
 
 # Current issues
-
-## Bluetooth lag (fixed-ish)
-The Fenvi card seems to have issues with Bluetooth. A ton of stuttering can be observed with a Magic Trackpad 2 and Logitech MX Master. A workaround is to connect the card to a 5GHz(?) Wi-Fi network, even if you are using Ethernet.
+N/A
