@@ -1,7 +1,7 @@
 # b250m-opencore-config
 OpenCore configuration for my personal desktop.
 
-# OpenCore version tested with: 0.6.2
+# OpenCore version tested with: 0.6.3
 ## macOS version tested with: 10.15.7
 Please do not use this with any newer or older version as some options may no longer exist or be interpreted differently, or new options may be needed in order to successfully boot.
 
