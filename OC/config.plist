@@ -99,6 +99,8 @@
 			<false/>
 			<key>AllowRelocationBlock</key>
 			<false/>
+			<key>ForceBooterSignature</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -601,6 +603,8 @@
 			<integer>0</integer>
 			<key>SetupDelay</key>
 			<integer>0</integer>
+			<key>ResetTrafficClass</key>
+			<false/>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
@@ -616,8 +620,6 @@
 			<false/>
 			<key>KeyForgetThreshold</key>
 			<integer>5</integer>
-			<key>KeyMergeThreshold</key>
-			<integer>2</integer>
 			<key>KeySupport</key>
 			<true/>
 			<key>KeySupportMode</key>
@@ -656,6 +658,8 @@
 			<key>UgaPassThrough</key>
 			<false/>
 			<key>ForceResolution</key>
+			<false/>
+			<key>GopPassThrough</key>
 			<false/>
 		</dict>
 		<key>ProtocolOverrides</key>
@@ -713,9 +717,26 @@
 			<false/>
 			<key>DisableSecurityPolicy</key>
 			<false/>
+			<key>ActivateHpetSupport</key>
+			<false/>
 		</dict>
 		<key>ReservedMemory</key>
 		<array/>
+		<key>AppleInput</key>
+		<dict>
+			<key>AppleEvent</key>
+			<string>Auto</string>
+			<key>CustomDelays</key>
+			<string>Auto</string>
+			<key>KeyInitialDelay</key>
+			<integer>10</integer>
+			<key>KeySubsequentDelay</key>
+			<integer>10</integer>
+			<key>PointerSpeedDiv</key>
+			<integer>1</integer>
+			<key>PointerSpeedMul</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 </dict>
 </plist>
