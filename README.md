@@ -14,7 +14,7 @@ Please do not use this with any newer or older version as some options may no lo
 - SSD: 256 GB Samsung 850 EVO
 - Wifi: Fenvi T919
 - Monitors: 2x Philips 245E
-- Audio: HDMI audio via Philips 245E
+- Audio: HDMI audio via Onkyo TX-NR609
 
 # BIOS Settings
 See the screenshots under the `BIOS` directory.
@@ -55,8 +55,6 @@ See the ACPI subfolder.
     - `ig-platform-id`: `0x19120001` (reversed) to enable a connectorless mode for the onboard graphics. Used to get acceleration working in various areas.
 - `PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)`: Fenvi T-919
     - `brcmfx-country`: `NL` to make optimal use out of the Fenvi card and to reduce possible interference with surrounding devices.
-- `PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)`: Radeon RX 580
-    - `shikigva`: `80` to allow DRM playback patches
 
 # Drivers
 Not included in this repo, I use the following drivers:
@@ -69,7 +67,6 @@ Not included in this repo, I use the following drivers:
 Not included in this repo, I use the following kexts:
 
 - [AppleALC](https://github.com/acidanthera/AppleALC): Fixes for HDMI and onboard audio
-- [CPUFriend](https://github.com/acidanthera/CPUFriend): Injects proper CPU power management properties generated with [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend) with a LFM of 800 MHz
 - [IntelMausi](https://github.com/acidanthera/IntelMausi): Driver for the built-in Ethernet controller
 - [Lilu](https://github.com/acidanthera/Lilu): Requirement for most other kexts in this list
 - [NVMeFix](https://github.com/acidanthera/NVMeFix): Fixes for NVMe drives
@@ -78,4 +75,5 @@ Not included in this repo, I use the following kexts:
 - [WhateverGreen](https://github.com/acidanthera/WhateverGreen): Required for proper functioning of both the integrated graphics card in headless/connectorless mode, and the RX580
 
 # Current issues
-N/A
+## No Netflix in Safari
+Known DRM issue. Shikigva=80 does not fix this.
