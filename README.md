@@ -6,7 +6,7 @@ OpenCore configuration for my personal desktop.
 Please do not use this with any newer or older version as some options may no longer exist or be interpreted differently, or new options may be needed in order to successfully boot.
 
 # Specs
-- CPU: i5 6400
+- CPU: i7 6700
 - Board: Gigabyte B250M-D3H (BIOS F10)
 - GPU: Sapphire Radeon RX 580 4GB
 - RAM: 16 GB Crucial Ballistix 2400 MHz DDR4 @ 2133MHz
