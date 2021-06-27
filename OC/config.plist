@@ -124,11 +124,6 @@
 				<key>AAPL,ig-platform-id</key>
 				<data>AQASGQ==</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>shikigva</key>
-				<integer>80</integer>
-			</dict>
 		</dict>
 	</dict>
 	<key>Kernel</key>
