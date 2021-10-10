@@ -619,6 +619,8 @@
 			<dict>
 				<key>Arguments</key>
 				<string></string>
+				<key>Comment</key>
+				<string>HFS+ filesystem driver</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -627,6 +629,8 @@
 			<dict>
 				<key>Arguments</key>
 				<string></string>
+				<key>Comment</key>
+				<string>OpenCore GUI driver</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -635,6 +639,8 @@
 			<dict>
 				<key>Arguments</key>
 				<string></string>
+				<key>Comment</key>
+				<string>OpenCore EFI runtime driver</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
