@@ -69,7 +69,7 @@ Not included in this repo, I use the following kexts:
 - [IntelMausi](https://github.com/acidanthera/IntelMausi): Driver for the built-in Ethernet controller
 - [Lilu](https://github.com/acidanthera/Lilu): Requirement for most other kexts in this list
 - [NVMeFix](https://github.com/acidanthera/NVMeFix): Fixes for NVMe drives
-- USBPorts: Generated with Hackintool, used for injecting only USB ports which are in use, to keep the system inside the 15 port limit
+- UTBPorts: Generated with [USBToolbox](https://github.com/USBToolBox/tool), used for injecting only USB ports which are in use, to keep the system inside the 15 port limit
 - [VirtualSMC](https://github.com/acidanthera/VirtualSMC): SMC emulator
 - [WhateverGreen](https://github.com/acidanthera/WhateverGreen): Required for proper functioning of both the integrated graphics card in headless/connectorless mode, and the RX580
 
