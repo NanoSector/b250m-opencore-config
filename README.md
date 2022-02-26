@@ -1,8 +1,8 @@
 # b250m-opencore-config
 OpenCore configuration for my personal desktop.
 
-# OpenCore version tested with: 0.7.4
-## macOS version tested with: 11.6
+# OpenCore version tested with: 0.7.8
+## macOS version tested with: 12.2.1
 Please do not use this with any newer or older version as some options may no longer exist or be interpreted differently, or new options may be needed in order to successfully boot.
 
 # Specs
@@ -29,6 +29,7 @@ See the screenshots under the `BIOS` directory.
 - The firmware has no MAT support, so `EnableWriteUnprotector` needs to be used for a succesful boot instead of the recommended `RebuildAppleMemoryMap`.
 
 ## ScanPolicy enabled flags
+**TODO: Update this, it allows Linux now**
 ScanPolicy is set to a value of `525571` or binary `000010000000010100000011`. This means the following flags are set:
 
 - `OC_SCAN_FILE_SYSTEM_LOCK` (bit 0)
@@ -56,6 +57,7 @@ See the ACPI subfolder.
     - `brcmfx-country`: `NL` to make optimal use out of the Fenvi card and to reduce possible interference with surrounding devices.
 
 # Drivers
+**TODO: Add new filesystem drivers to the list**
 Not included in this repo, I use the following drivers:
 
 - OpenCanopy (in the OpenCore package)
